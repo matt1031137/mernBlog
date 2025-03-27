@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@clerk/express": "^1.3.56",
+    "body-parser": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "imagekit": "^6.0.0",
+    "mongoose": "^8.12.2",
+    "path-to-regexp": "^8.2.0",
+    "svix": "^1.62.0"
+  }
+}

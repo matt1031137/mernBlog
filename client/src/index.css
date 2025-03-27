@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#FDFAF6;
+    width:100vw;
+    overflow-x:hidden;
+    font-family:"Montserrat",sans-serif;
+}
+
+.animatedButton{
+ animation-duration:10000ms;
+}
+
+.ql-container{
+    border:none !important;
+}
+
+
+.ql-toolbar{
+    border:none !important;
+}
+
+.ql-editor{
+    border:none !important;
+}
+
+.ql-editor h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .ql-editor h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+  
+  .ql-editor h3 {
+    font-size: 1.2em;
+    line-height:2;
+    text-align: justify;
+  }
