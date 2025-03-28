@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install --legacy-peer-deps --prefix backend && npm install --legacy-peer-deps --prefix client && npx vite build --prefix client",
+    "build": "npm install --legacy-peer-deps --prefix backend && npm install --legacy-peer-deps --prefix client && cd client && npx vite build",
     "start": "npm run start --prefix backend"
   },
   "keywords": [],
