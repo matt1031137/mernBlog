@@ -57,6 +57,7 @@ const PostList = () => {
   // console.log(data);
   console.log(allPosts);
 
+
   //改allPosts.length 跟fetchNextPage
   return (
     <InfiniteScroll
