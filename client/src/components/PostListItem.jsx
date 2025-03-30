@@ -10,9 +10,9 @@ const PostListItem = ({ post }) => {
             {/* image */}
             {post.img 
 
-            ? ( <div className="md:hidden lg:block lg:w-1/3">
+            ? ( <Link to={`/${post.slug}`} className="md:hidden lg:block lg:w-1/3">
                 <Image src={post.img} className="rounded-2xl object-center w-full h-full object-cover" w="735" h="400" />
-            </div> )
+            </Link> )
             :(
                 <div className="md:hidden lg:block lg:w-1/3">
                 <Image src="tempCover.jpg" className="rounded-2xl object-center w-full h-full object-cover" w="735" h="400" />

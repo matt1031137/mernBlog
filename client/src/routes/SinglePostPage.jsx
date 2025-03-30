@@ -7,6 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { format } from "timeago.js";
 import ReactQuill from "react-quill-new";
+import "quill/dist/quill.bubble.css"; 
 
 //獲取單篇文章所需slug並跨域請求
 const fetchPost = async (slug) => {

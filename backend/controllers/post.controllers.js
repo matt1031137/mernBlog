@@ -78,10 +78,6 @@ export const getPosts = async (req, res) => {
         query.isFeatured = true;
     }
 
-
-
-
-
     //抓5個資料，略過(頁面變數-1)*5項
     //query 是一個物件，其中的 鍵（key）是 資料庫集合（table）內的欄位，而 值（value）則是對應的搜尋條件。
     //如果有不相干的鍵（資料表沒有該欄位）MONGODB會忽略不會錯誤
