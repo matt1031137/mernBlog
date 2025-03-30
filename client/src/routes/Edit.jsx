@@ -12,6 +12,21 @@ import Image from "../components/Image";
 
 const Edit = () => {
 
+       //修改reactQuill的編輯介面
+       const modules = {
+        toolbar: [
+          [{ header: [1, 2, 3, 4, 5, 6, false] }], // 支援 H1~H6
+          [{ font: [] }], // 字體
+          [{ color: [] }, { background: [] }], // 字體顏色、背景顏色
+          ["bold", "italic", "underline", "strike"], // 粗體、斜體、底線、刪除線
+          [{ align: [] }], // 文字對齊
+          [{ list: "ordered" }, { list: "bullet" }], // 編號、符號清單
+          [{ indent: "-1" }, { indent: "+1" }], // 縮排
+          ["blockquote", "code-block"], // 引用、程式碼區塊
+          ["clean"], // 清除格式
+        ],
+      };
+
     const location = useLocation();
     const post = location.state?.post; // 透過 state 取得 post
 
@@ -149,6 +164,7 @@ const Edit = () => {
                         value={value}
                         onChange={setValue}
                         disabled={(progress > 0 && progress < 100)}
+                        modules={modules}
                     />
                 </div>
                 <button
